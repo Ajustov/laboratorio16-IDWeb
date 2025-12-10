@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio16</title>
+    <style>
+        .oscuro { 
+            background:#222; 
+            color:white; 
+        }
+
+        #cuadro12 {
+            transition: transform 0.8s;
+        }
+        .mover {
+            transform: translateX(200px);
+        }
+
+        .completada { 
+            color: green; 
+        }
+
+        .error { 
+            color: red; 
+            font-size: 14px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratorio16</h1>
+
+    <section>
+        <h2>Ejercicio 3</h2>
+        <p id="p3">Texto original</p>
+        <button onclick="ejercicio03()">Cambiar texto</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 4</h2>
+        <p id="p4">Texto original</p>
+        <button onclick="ejercicio04()">Alternar texto</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 5</h2>
+        <button onclick="ejercicio05()">Modo oscuro</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 6</h2>
+        <button onclick="ejercicio06_menos()">-</button>
+        <span id="contador6">0</span>
+        <button onclick="ejercicio06_mas()">+</button>
+        <p id="msg6"></p>
+    </section>
+
+    <section>
+        <h2>Ejercicio 7</h2>
+        <input id="input7">
+        <button onclick="ejercicio07_agregar()">Agregar</button>
+        <button onclick="ejercicio07_borrar()">Borrar último</button>
+        <ul id="lista7"></ul>
+    </section>
+
+    <section>
+        <h2>Ejercicio 8</h2>
+        <input id="nom8" placeholder="Nombre"><br>
+        <input id="cor8" placeholder="Correo"><br>
+        <button onclick="ejercicio08()">Validar</button>
+        <div id="err8"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio 9</h2>
+        <div>
+            <img src="98884-OLRRMW-655.jpg" width="60" onclick="ejercicio09(this)">
+        </div>
+        <img id="img9" src="98884-OLRRMW-655.jpg" width="120">
+    </section>
+
+    <section>
+        <h2>Ejercicio 10</h2>
+        <button onclick="ejercicio10()">Generar tabla</button>
+        <div id="tabla10"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio 11</h2>
+        <ul id="ul11">
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ejercicio 12</h2>
+        <div id="cuadro12" style="width:50px;height:50px;background:red;"></div>
+        <button onclick="ejercicio12()">Mover</button>
+        <button onclick="ejercicio12_reset()">Reiniciar</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 13</h2>
+        Nombre: <input id="n13">
+        Edad: <input id="e13">
+        <button onclick="ejercicio13_add()">Agregar</button>
+        <table border="1" id="t13">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Acciones</th>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Ejercicio 14</h2>
+        <button onclick="ejercicio14()">Mostrar JSON</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 15</h2>
+        <p id="p15"></p>
+        <button onclick="ejercicio15()">Cargar JSON</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 16</h2>
+        <ul id="ul16"></ul>
+        <button onclick="ejercicio16()">Generar lista JSON</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 17</h2>
+        <button onclick="ejercicio17()">Guardar usuario</button>
+        <p id="p17"></p>
+    </section>
+
+    <section>
+        <h2>Ejercicio 18</h2>
+        <button onclick="ejercicio18()">Generar tabla libros</button>
+        <div id="div18"></div>
+    </section>
+
+    <section>
+        <h2>Ejercicio 19</h2>
+        <button onclick="ejercicio19()">Modificar JSON</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 20</h2>
+        <input id="nom20">
+        <button onclick="ejercicio20()">Guardar</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 21</h2>
+        <ul id="ul21"></ul>
+        <button onclick="ejercicio21()">Generar tareas</button>
+    </section>
+
+    <section>
+        <h2>Ejercicio 22</h2>
+        <input id="n22" placeholder="Nombre">
+        <input id="e22" placeholder="Edad">
+        <input id="p22" placeholder="País">
+        <button onclick="ejercicio22_guardar()">Guardar perfil</button>
+        <p id="perfil22"></p>
+    </section>
+
+    <script src="ejercicios/ejercicio03.js"></script>
+    <script src="ejercicios/ejercicio04.js"></script>
+    <script src="ejercicios/ejercicio05.js"></script>
+    <script src="ejercicios/ejercicio06.js"></script>
+    <script src="ejercicios/ejercicio07.js"></script>
+    <script src="ejercicios/ejercicio08.js"></script>
+    <script src="ejercicios/ejercicio09.js"></script>
+    <script src="ejercicios/ejercicio10.js"></script>
+    <script src="ejercicios/ejercicio11.js"></script>
+    <script src="ejercicios/ejercicio12.js"></script>
+    <script src="ejercicios/ejercicio13.js"></script>
+    <script src="ejercicios/ejercicio14.js"></script>
+    <script src="ejercicios/ejercicio15.js"></script>
+    <script src="ejercicios/ejercicio16.js"></script>
+    <script src="ejercicios/ejercicio17.js"></script>
+    <script src="ejercicios/ejercicio18.js"></script>
+    <script src="ejercicios/ejercicio19.js"></script>
+    <script src="ejercicios/ejercicio20.js"></script>
+    <script src="ejercicios/ejercicio21.js"></script>
+    <script src="ejercicios/ejercicio22.js"></script>
+</body>
+</html>
+
